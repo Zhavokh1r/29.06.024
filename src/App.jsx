@@ -2,6 +2,7 @@ import { Typography, Card } from "@material-tailwind/react";
 import { Link, Route, Routes } from "react-router-dom";
 import Create from "./Pages/Create";
 import GetNews from "./Pages/Get";
+import UPdate from "./Pages/update";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<GetNews/>}/>
         <Route path="/create" element={<Create/>}/>
+        <Route path="/update/:id" element={<UPdate/>}/>
       </Routes>
     </div>
   );

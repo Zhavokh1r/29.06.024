@@ -7,7 +7,7 @@ export default function Create() {
 
   const newMalumot = (e) => {
     e.preventDefault();
-    api.post("/malumot", {
+    api.post("/news", {
       title: title,
       malumot: malumot,
     });
